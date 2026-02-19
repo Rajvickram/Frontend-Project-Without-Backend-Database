@@ -43,7 +43,7 @@ input {
 .social-icons {
             display: flex;
             gap: 15px;
-            margin-right: 22rem;
+            margin-right: 18rem;
 }
 
 .social-icons a {
@@ -55,7 +55,7 @@ input {
             align-items: center;
             justify-content: center;
             color: #000;
-            font-size: 20px;
+            font-size: 23px;
             text-decoration: none;
             transition: all 0.3s ease;
 }
