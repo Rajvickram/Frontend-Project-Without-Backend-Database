@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Page</title>
+
+
+    <!-- FAVICON IMAGE ADDING Size Should be (96 * 96 Pixels) & Image Format Should be (.ico, .png, .gif, .jpeg, .svg) -->
+    <link rel="icon" href="../Images/final-image.jpg" type="image/jpg">
+
+
+    <!-- CSS Linking Sheets -->
+    <link rel="stylesheet" href="../CSS/home.css">
+
+
+    <!-- CDN Links are Full Form is Content Deliver Links -->
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons (optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+
+
+    <!-- Step - 1 :- Header With Navigation Bar -->
+
+    <div id="Nav-Hero-Bg">
+        <header class="my-3">
+            <nav class="navbar navbar-dark bg-light navbar-expand-md mx-auto rounded-2 shadow w-75" id="navbar-Bg">
+                <div class="container">
+                    <a href="#" class="navbar-brand text-black fw-bolder ms-2 fst-normal"><i
+                            class="bi bi-bag-fill me-3"></i>PRODUCTS</a>
+    
+
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse" id="nav">
+                        <ul class="navbar-nav ms-auto text-center gap-4">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-black fs-5 fst-normal">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-black fs-5 fst-normal">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-black fs-5 fst-normal">Info</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-black fs-5 fst-normal">Contact Us</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a href="../HTML/Login.html" type="submit" class="btn btn-outline-primary mt-1" id="logBtn">Log In</a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="submit" class="btn btn-primary text-white mt-1" id="sigBtn">Sign
+                                    Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Step - 2 :- Hero Tag Element  -->
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="mt-5 fw-semibold" id="hero-title">Welcome to Product Management</h2>
+                    <p class="mt-4 fs-4 fw-medium" id="hero-subtitle">Efficiently manage and track your products</p>
+                    <div id="hero-btn" class="mt-4">
+                        <a href="#" class="btn btn-primary me-2" id="get-started-button">Get Started</a>
+                        <a href="#" class="btn btn-outline-dark" id="learn-more-button">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="../Images/Landing Page RightSide Man Standing Image.png" alt="rightSideMan"
+                        class="card-img-top mb-2 bg" id="hero-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Step - 3 :- Card Tag Element -->
+
+    <div class="container mt-4">
+        <div class="row g-4 d-flex justify-content-between">
+            <div class="col-md-3 ms-lg-5">
+                <div class="card h-100 my-2">
+                    <div class="card-body">
+                        <img class="me-3" src="https://img.icons8.com/fluency/48/task.png" alt=""> <span class="fs-5 fw-bold feature-icon--products">Manage Products</span>
+                        <p class="ms-5 px-4 my-2">Add, edit and organize your products</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ms-lg-5">
+                <div class="card h-100 my-2">
+                    <div class="card-body">
+                        <img class="me-1" src="https://img.icons8.com/fluency/48/combo-chart.png" alt=""> <span class="fs-5 fw-bold feature-icon--reports">View Reports</span>
+                        <p class="ms-5 px-3 my-2">Analyze product performance and sales</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ms-lg-5">
+                <div class="card h-100 my-2">
+                    <div class="card-body">
+                        <img class="me-2" src="https://img.icons8.com/fluency/48/appointment-reminders.png" alt=""> <span class="fs-5 fw-bold feature-icon--notifications">Receive Notifications</span>
+                        <p class="ms-5 px-3 my-2">Stay Updated with important alerts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Step - 4 :- Footer for the Landing Page -->
+
+    <div class="container my-5 text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-muted my-5">Get Started with our product management platform now</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI JS (Optional) -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

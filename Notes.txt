@@ -1,0 +1,54 @@
+1. My Goal To Do this Project Because..., :-  “I don’t want to forget Frontend (HTML, CSS, Bootstrap, jQuery, AJAX)
+
+2. Project Name :- Frontend Practice Project – Login → Dashboard → Add Item 
+
+3. Flow Of this Project :- 
+
+LEVEL 0 – Setup & Thinking
+LEVEL 1 – Page Structure (HTML)
+LEVEL 2 – Design (CSS + Bootstrap)
+LEVEL 3 – Interaction (jQuery)
+LEVEL 4 – Fake Data (AJAX)
+LEVEL 5 – Polishing (UI)
+
+
+4. LEVEL 0 :-
+    
+    I) Create a First Folder :- Inside it, create empty files :- login.html, dashboard.html and add-product.html
+   II) Create a Second Folder :- css/ JS/ data
+  III) Decide Flow :- 
+           1. User opens Login Page
+           2. User enters email & password
+           3. If correct → Dashboard Page
+           4. Dashboard shows table
+           5. User clicks Add New
+           6. User adds product 
+
+------------------------------ LEVEL 0  DONE ------------------------------------------------------------------------------------------------------------- 
+
+
+
+5. LEVEL 1 :-
+
+    I) Open Login.html File
+   II) Title, Email Input, Password Input and Login Button 
+
+
+Folder Structure for this Whole Project :-
+----------------------------------------------
+Frontend-Practice-Project/
+│
+├── login.html
+├── dashboard.html
+├── add-product.html
+│
+├── css/
+│   └── style.css   (we will create later)
+│
+├── js/
+│   ├── login.js        (later)
+│   ├── dashboard.js   (later)
+│   └── add-product.js (later)
+│
+└── data/
+    └── products.json  (later)
