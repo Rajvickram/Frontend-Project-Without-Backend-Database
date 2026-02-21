@@ -18,6 +18,11 @@ body {
     line-height: 1.2;
 }
 
+#txt_signup {
+    margin-left: 6.8rem;
+}
+
+
 .nature-text {
     position: relative;
     display: inline-block;
@@ -84,4 +89,8 @@ input {
             margin-right: 0;
     }
     
+    #txt_signup {
+        margin-left: 0;
+        margin-top: 0rem;
+    }
 }
