@@ -29,7 +29,7 @@
 
     <!-- Login Page Setup - 1 -->
     
-    <div class="container">
+    <div class="container"> 
         <div class="row">
             <div class="col-md-6">
                 <div class="card w-75 mx-auto">
@@ -45,7 +45,11 @@
                             <label for="Pwd" class="form-check-label text-white mt-3">Password</label>
                             <div class="input-group w-75">
                                 <input type="password" name="pwd" id="txt_login_password" class="form-control">
+                                <span class="input-group-text" id="togglePassword">
+                                    <i class="fa fa-eye"></i>
+                                </span>
                             </div>
+                            <small id="password_strength" class="text-warning"></small>
                             <div class="form-check mt-3">
                                 <input type="checkbox" name="rember" id="rember" class="form-check-input" value="rember">
                                 <label for="rember" class="form-check-label text-white ms-1">Rember me?</label>
