@@ -20,12 +20,12 @@ $(document).ready(function() {
         var emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
 
         if (emailPattern.test(email)) {
-            $('#txt_login_email').css({'border': '2px solid green'}); 
+            $('#txt_login_email').css({'border': '2px solid green', 'box-shadow': 'none'}); 
             $('.txt_shown_error').html('');
         }
 
         else {
-            $('#txt_login_email').css({'border': '2px solid red'});
+            $('#txt_login_email').css({'border': '2px solid red', 'box-shadow': 'none'});
             $('.txt_shown_error').html('Email must end with @gmail.com');
         };
     });
@@ -67,36 +67,8 @@ $(document).ready(function() {
 var btnLog = function() {
     $('#login_btn').click(function() {
         if(Validate()) {
-            $.ajax({
-                url:'../Data/users.json',
-                method:'GET',
-                success:function(data) {
-                    console.log(data);
-
-                    var email = $('#txt_login_email').val().trim();
-                    var password = $('#txt_login_password').val().trim();
-
-                    var loginSuccess = false;
-
-                    $.each(data,function(i,user) {
-                        if(user.email.toLowerCase() === email.toLowerCase() && user.password === password) {
-                            loginSuccess = true;
-                        }
-                    });
-
-                    if (loginSuccess) {
-                        alert('Login Success');
-                        clearForm();
-                    }
-                    else {
-                        alert('Invalid Login Details');
-                    }
-                },
-
-                error:function() {
-                    alert('JSON file not found');
-                },
-            });
+            alert('Your Form is Submitted Successfully');
+            clearForm();
         };
     });
 };
@@ -136,7 +108,7 @@ var Validate = function() {
 
     else if (!checkBox) {
         $('.txt_shown_error').html('Click the CheckBox and then submit the Form');
-        $('#rember').closest('.form-check').css('color','red');
+        $('#rember').focus();
         return false;
     }
     return true;
