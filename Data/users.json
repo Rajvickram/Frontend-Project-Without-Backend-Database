@@ -1,22 +1,22 @@
 [
-    {
-        "email": "vikramsachin400@gmail.com",
-        "password":"Vikram@200"
-    },
-    {
-        "email":"palaniselvi@gmail.com",
-        "password":"PalaniSelvi@200"
-    },
-    {
-        "email":"selvipalani@gmail.com",
-        "password":"Selvi@200"
-    },
-    {
-        "email":"Parithielangovan@gmail.com",
-        "password":"Parithi@2001"
-    },
-    {
-        "email":"Santhosh@gmail.com",
-        "password":"Santhosh@200"
-    }
+  {
+    "email": "vikramsachin400@gmail.com",
+    "password": "Vikram@200"
+  },
+  {
+    "email":"PalaniSelvi@gmail.com",
+    "password":"Palani@1972"
+  },
+  {
+    "email":"SelviPalani@gmail.com",
+    "password":"Selvi@1980"
+  },
+  {
+    "email":"ParithiElangovan@gmail.com",
+    "password":"Parithi@2001"
+  },
+  {
+    "email":"Rishi@gmail.com",
+    "password":"Rishi@1234567"
+  }
 ]
