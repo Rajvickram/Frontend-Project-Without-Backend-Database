@@ -52,3 +52,402 @@ Frontend-Practice-Project/
 │
 └── data/
     └── products.json  (later)
+    |__ users.json (User Details)
+
+
+
+
+
+1. In this Project using Frontend without Backend and Database, But i need to store my Values in Database but it can't handle while using Backend like without talking to database without permission of Backend 
+2. So im going to create Fake Database - Like named of JSON 
+3. JSON - Javascript Object Notation
+4. In my Project Folder im creating Data Folder 
+5. Use of Data Folder - is store our Fake Database Value in JSON Types 
+
+
+Step - 1.1 :-
+---------------------
+What We Are Going To Build :-
+------------------------------------
+We will simulate this real company login flow :-
+-------------------------------------------------------
+Login Page
+   ↓
+Validate Form
+   ↓
+AJAX Request
+   ↓
+Fake API (JSON File)
+   ↓
+Check Credentials
+   ↓
+Create Session (localStorage)
+   ↓
+Redirect to Dashboard
+
+So even without backend, it looks like real system.
+
+
+
+
+Step - 1.2 :-
+-----------------
+Project Folder Architecture (Professional Structure) :-
+-----------------------------------------------------------
+Your project should look like this :-
+---------------------------------------
+Frontend-Project
+│
+├── HTML
+│     Login.html
+│     Dashboard.html
+│
+├── CSS
+│     login.css
+│
+├── JS
+│     Login.js
+│     session.js
+│
+├── Data
+│     users.json
+│
+├── Images
+
+
+
+Why Data Folder :-
+-----------------------
+Data folder la namma
+fake database store pannuvom
+(JSON files)
+
+
+Example Files for Data Folder :-
+-----------------------------------
+user.json,
+Products.json,
+fake-api.json
+
+
+
+Step - 1.3 :-
+--------------------
+What is JSON (Important) :-
+-----------------------------------
+JSON = JavaScript Object Notation :-
+---------------------------------------
+Why we use JSON :-
+----------------------
+JSON is a my need is without creating or design Backend and Database so im just creating JSON types 
+its uses of Local Storage;
+
+Example JSON file :-
+----------------------------
+Data/users.json :-
+-------------------------
+[
+ {
+   "email": "vikramsachin400@gmail.com",
+   "password": "Vikram@123"
+ },
+ {
+   "email": "admin@gmail.com",
+   "password": "Admin@123"
+ }
+]
+
+Meaning :-
+-----------------
+This is like mini database.
+
+Thanglish :-
+----------------------
+Database illama
+users data store panna
+JSON use pannalam
+
+
+
+
+Step - 1.4 :-
+------------------
+AJAX Login Flow :-
+-------------------------
+When user clicks login :-
+--------------------------------
+User Click Login
+↓
+jQuery Validate()
+↓
+AJAX Request
+↓
+users.json file read
+↓
+Check email/password
+↓
+Login success / fail
+
+
+
+
+Step - 1.5 :-
+------------------
+What is localStorage :-
+------------------------------
+localStorage is browser storage :-
+-------------------------------------
+Example :-
+--------------------------------------------------
+localStorage.setItem("user","vikram@gmail.com")
+Store data in browser.
+Retrieve :-
+---------------------------------
+localStorage.getItem("user")
+Remove :-
+-----------------------------------
+localStorage.removeItem("user")
+
+
+
+
+
+Step - 1.6 :-
+----------------
+Example :-
+-----------------------------------
+<h2>Welcome User</h2>
+<button id="logout">Logout</button>
+
+
+
+
+
+
+Step - 1.7 :-
+-------------------
+Create Session Script :-
+----------------------------
+Create file :-
+--------------------------
+JS/session.js
+Code :-
+---------------------------------------
+$(document).ready(function(){
+
+var user = localStorage.getItem("user");
+
+if(!user){
+
+window.location.href = "Login.html";
+
+}
+
+});
+
+Meaning :-
+---------------------------------
+user login pannalana
+dashboard access panna mudiyadh
+
+
+
+
+
+
+Step - 1.8 :-
+------------------------
+Logout Button
+Inside Dashboard JS :-
+------------------------------
+$('#logout').click(function(){
+
+localStorage.removeItem("user");
+
+window.location.href = "Login.html";
+
+});
+
+Meaning :-
+------------------------
+session clear
+back to login
+
+
+
+
+Step - 1.9 :-
+---------------------------
+Final System Flow :-
+--------------------------
+Your frontend login system now works like this :-
+-------------------------------------------------------
+User opens Login page
+↓
+Enter Email + Password
+↓
+Validate()
+↓
+AJAX request
+↓
+users.json (fake database)
+↓
+Check credentials
+↓
+Login success
+↓
+Save session in localStorage
+↓
+Redirect to Dashboard
+↓
+Dashboard checks session
+↓
+Logout clears session
+
+This is almost how real web apps work.
+
+
+
+
+
+
+
+Step - 1.10 :-
+------------------------
+Why This Is Powerful For Interviews
+You can explain :-
+---------------------
+Frontend Validation
+AJAX Request
+API communication
+JSON data
+Session handling
+localStorage
+Page redirection
+
+
+
+
+
+
+
+Step - 1.11 :-
+-----------------------
+Now going to learn :-
+--------------------------
+AJAX :-
+------------
+Asynchronous Javascript and XML :-
+
+Thanglish Explanation of Each Part :-
+--------------------------------------
+1. $.ajax({}) :-
+----------------
+AJAX request create pannum
+
+Meaning :-
+--------------------------
+Server / file kitta
+data request pannum
+
+
+
+2. url :-
+--------------------------
+url:"../Data/users.json"
+
+Meaning :-
+--------------------------------
+users.json file read pannum
+
+
+
+3. method:"GET" :-
+----------------------
+GET means :-
+------------------------
+data fetch panna
+
+
+
+
+4. success:function(data) :-
+-----------------------------------
+Meaning :-
+-----------------------------------
+data successfully receive aana
+intha function run aagum
+data contains :-
+--------------------------------
+users.json full content
+
+
+
+
+
+5. $.each(data,function(index,user)) :-
+-------------------------------------------
+This loops through JSON users.
+Example :-
+-----------------
+user 1
+user 2
+user 3
+
+Login Check :-
+-------------------------------------------
+if(user.email === email && user.password === password)
+
+Meaning :-
+----------------------
+user email match
+AND
+password match
+
+
+
+
+
+
+6. localStorage Session :-
+-------------------------------------------
+localStorage.setItem("user",email);
+
+Meaning :-
+-------------------------------------------
+Browser la login session save pannrom
+
+
+
+
+
+
+Step - 1.12 :-
+---------------------
+
+What is localStorage :-
+-------------------------------
+localStorage is browser storage.
+
+
+Example :-
+---------------------------------------------------
+localStorage.setItem("user","vikram@gmail.com")
+Store data in browser
+
+Retrieve :-
+-----------------------------------
+localStorage.getItem("user")
+
+Remove :-
+--------------------------------------
+localStorage.removeItem("user")
+
+
+
+
+
+
+
+Step - 1.13 :-
+--------------------

@@ -85,7 +85,9 @@ var btnLog = function() {
                     });
 
                     if (loginSuccess) {
-                        alert('Login Success');
+                        localStorage.setItem("user",email);
+                        alert("Login Successfull");
+                        window.location.href = ""
                         clearForm();
                     }
                     else {
