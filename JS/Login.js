@@ -87,7 +87,7 @@ var btnLog = function() {
                     if (loginSuccess) {
                         localStorage.setItem("user",email);
                         alert("Login Successfull");
-                        window.location.href = ""
+                        window.location.href = "../HTML/Dashboard.html";
                         clearForm();
                     }
                     else {

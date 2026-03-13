@@ -1,5 +1,13 @@
-$(document).ready(function() {
-    localStorage.removeItem("user");
+$(document).ready(function () {
+    var user = localStorage.getItem("user");
 
-    window.location.href = "Login.html";
+    if (!user) {
+        window.location.href = "Login.html";
+    }
+
+    $('#logout').click(function () {
+        localStorage.removeItem('user');
+
+        window.location.href = "Login.html";
+    });
 });

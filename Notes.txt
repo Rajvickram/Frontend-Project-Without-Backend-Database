@@ -447,7 +447,190 @@ localStorage.removeItem("user")
 
 
 
+Now Our System Flow (What happens) :-
+-----------------------------------------
+Lets walk through with Step by Step
 
+Step - 1 :-
+----------------
 
-Step - 1.13 :-
+1. Browsers Loads :-
+-----------------------
+Login.html
+
+2. Our JS runs :-
+-------------------
+$(document).ready(function(){})
+
+3. Meaning :-
 --------------------
+Page ready → run jQuery code.
+
+
+
+
+
+Step - 2 :- (User Types Email) :-
+----------------------------------
+
+1. Your code runs :-
+-----------------------------------------
+$('#txt_login_email').keyup(function())
+
+2. Meaning :-
+------------------------------------
+Every time user types email
+validation runs
+
+3. If correct :-
+--------------------
+border green
+
+4. If wrong :-
+-----------------
+border red
+
+
+
+
+
+
+
+Step - 3 :- (User Types Password) :-
+-------------------------------------------
+
+1. Your code :-
+--------------------------------------------
+$('#txt_login_password').keyup(function());
+
+
+2. Password strength meter shows :-
+-------------------------------------------
+Weak
+Medium
+Strong
+
+
+
+
+
+
+
+
+Step - 4 :- (User Click Login) :-
+----------------------------------------
+
+1. This runs :-
+----------------------------
+$('#login_btn').click()
+
+2. Then this runs :-
+---------------------------
+Validate()
+
+
+
+
+
+
+
+
+
+
+
+
+Step - 5 :- (Validate() Function) :-
+------------------------------------------
+
+1. Checks :-
+---------------------------------
+Email empty?
+Email format correct?
+Password empty?
+Password pattern correct?
+Checkbox checked?
+
+If any error → stop.
+
+If correct → continue.
+
+
+
+
+
+
+
+Step - 6 :- (AJAX Runs) :-
+---------------------------------
+
+1. Your AJAX code :-
+-------------------------------
+$.ajax({
+ url:'../Data/users.json',
+ method:'GET'
+})
+
+
+2. Meaning :-
+------------------------------
+Read users.json file
+
+This is your fake database.
+
+
+
+
+
+
+
+
+
+
+Step - 7 :- (JSON Data Loaded) :-
+-----------------------------------------
+
+1. Your JSON file contains :-
+--------------------------------------------------------------------------
+[
+ { "email": "vikramsachin400@gmail.com", "password": "Vikram@200" }
+]
+
+2. AJAX loads this and sends it into :-
+-----------------------------------------------
+data
+
+
+
+
+
+
+
+
+Step - 8 :- (Loop through Users) :-
+----------------------------------------------
+
+1. This code runs :-
+--------------------------------
+$.each(data,function(i,user)
+
+2. Meaning :-
+-----------------------------
+Loop through each user
+
+3. Example :-
+-------------------------
+user 1
+user 2
+user 3
+
+
+
+
+
+
+
+
+
+Step - 9 :- ()
+------------------------
+
